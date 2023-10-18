@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+
+<style>
+
+/* tag selector
+syntax: 
+tagname {
+    property: value;
+}
+*/
+h1 {
+    color:red;
+    /* background-color: black; */
+}
+p {
+    /* style of p tag here  */
+}
+
+/* id sleector 
+syntax:  #idname {
+    property:value;
+} */
+#myid {
+    color:blue;
+}
+
+#anyid{
+    color:brown;
+}
+#learningreact{
+    color:rgb(158, 206, 28);
+}
+
+/* class selectors: 
+syntax: .classname{
+
+} */
+
+.py{
+    background-color: aqua;
+    color: blue;;
+}
+.re {
+    color:rgb(255, 0, 0);
+}
+
+/* universal selector  *{property:value} */
+* {
+    font-size: 30px;
+    /* background: #000; */
+}
+
+/* grouping of selector    */
+
+
+h1, h2, h3, h4, h5, h6{
+    color:red
+} 
+
+</style>
+
+</head>
+<body>
+
+    <h1>Selectors in CSS</h1>
+
+    <ol>
+        <li>Tag Selector</li>
+        <li>ID Selector</li>
+        <li>Class Selector </li>
+        <li>Universal selector</li>
+        <li>Grouping of Selectors</li>
+    </ol>
+
+<h6>hi</h6>
+    <!-- 1 tag selectors  -->
+    <h1>h1 tag</h1>
+
+    <!-- id selector  -->
+    <h1 id="myid" >ID sleector</h1>
+    <h1 id="anyid">next id selector </h1>
+
+
+    <!-- class selector  -->
+
+    <p  class="re">I am learning React</p>
+    <p class="py">I am learning PYthon</p>
+    <p class="py re">I am learning Python and React</p>
+    <p class="re" >I am learning React</p>
+    <p class="py">I am learning PYthon</p>
+    <p class="re py">I am learning Python and React</p>
+    <p class="re">I am learning reacth</p>
+
+
+    <!-- universal selecotr  means alll elements of the page -->
+<h1>Hi</h1>
+<h2>Hi</h2>    
+<h3>hi</h3> 
+</body>
+</html>
