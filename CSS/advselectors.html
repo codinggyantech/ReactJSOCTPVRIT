@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance selectors: </title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        h1::before{
+            content: 'before';
+            background:green;
+        }
+
+        h1::after{
+            content: 'aft';
+            width: 10px;
+            height: 10px;
+            background-color: blue;
+        }
+
+
+        h2{
+            color: white;
+            background: red;
+        }
+        h2:hover{
+            background-color: green;
+            color: red;
+        }
+
+        a:hover{
+            color:green;
+        }
+        a:visited{
+            color: gray;
+        }
+
+input:focus{
+    background-color: red;
+}
+
+a:active{
+    color: blue;
+}
+
+
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color:green
+}
+li:nth-child(4){
+    color: blue;
+}
+
+li:nth-child(2n+1){
+    color: yellow;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    Pseudo Selectors: 
+    1 Pseudo elements 
+
+ <!-- before and after selectors -->
+    <h1>HTML Element</h1>
+
+
+    <!-- pseudo class :  -->
+
+    <h2>HI I am a H2 tag</h2>
+
+    <a href="https://www.google.com">google site</a>
+
+    <input type="text" name="" id="">
+
+
+
+    <ol>
+        <li>hi</li>
+        <li>hi</li>
+        <li>hi</li>
+        <li>hi</li>
+        <li>hi</li>
+        <li>hi</li>
+    </ol>
+</body>
+</html>
