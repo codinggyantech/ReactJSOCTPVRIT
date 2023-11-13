@@ -8,9 +8,28 @@
         /* including css  */
     </style>
 </head>
-<body>
-    <h1>Learning JS</h1>
+<body onload="loadfun()">
+    <h1 id="first" onmouseover="mouseover()"  onmouseleave="mouseleave()">Learning JS</h1>
+    <h1>Hello</h1>
+    <h1>Bye</h1>
 
+    <h2 class="cls">Learning Events</h2>
+
+    <ol >
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+
+    <button onclick="myclick()" on>Click </button>
+
+    <button ondblclick="dblclick()">DBL click </button>
+
+<!-- keyboard events 
+ -->
+ <input type="text" id="inp" onkeypress="onkeypressfun(event)">
+ <input type="text" onkeypress="myFunction()">
 
 <!-- internal way of including js  -->
 <!-- <script>
@@ -30,8 +49,8 @@
 
 
 <!-- <script src="t6.js"></script> -->
-<script src= "t7.js"></script>
-
+<!-- <script src= "t7.js"></script> -->
+<script src= "t8.js"></script>
 
 
 </body>
