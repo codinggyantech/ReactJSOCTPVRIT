@@ -12,7 +12,10 @@ code {
     monospace;
 }
 
-
-h1{
-  background:red;
+.cls{
+  background-color: red;
 }
+
+/* h1{
+  background:red;
+} */
