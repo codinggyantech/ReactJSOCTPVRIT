@@ -1,38 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
-// import { useEffect, useState } from 'react';
-// import ChildCompoent from './Components/ChildCompoent';
-// // import Game from './Components/Tictaktoe';
-
-
-
-// function App() {
-//     const[add,setAdd] = useState(true)
-
-
-//     const[input,setInput] = useState('')
-
-// //     useEffect(()=>{
-// // console.log('App Component Loaded on Scren')
-
-// //     })
-//   return (
-//     <>
-//     <h1> React UseEffect</h1>
-
-//     <button onClick={()=> setAdd(!add)}>Add/remove</button>
-//     {add ? <ChildCompoent/> : "Child componet removed"}
-//    <h2>Your Input value is :  {input}</h2>
-
-//    <input  onChange={(e)=>setInput(e.target.value)} />
-
-//  <Tictaktoe/>
-//     </>
-//   );
-// }
-
-// export default App;
-
 import { useState } from 'react';
 
 function Square({ value, onSquareClick }) {
@@ -87,7 +52,7 @@ function Board({ xIsNext, squares, onPlay }) {
   );
 }
 
-export default function App() {
+export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0;
