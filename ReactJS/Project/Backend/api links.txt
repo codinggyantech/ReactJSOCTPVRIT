@@ -1,0 +1,15 @@
+
+//Products : 
+https://api.escuelajs.co/api/v1/products  | get all the products 
+https://api.escuelajs.co/api/v1/products/1  | to get the single product 
+
+// Categories 
+https://api.escuelajs.co/api/v1/categories | get all the categories
+https://api.escuelajs.co/api/v1/categories/1 | to get the single category
+
+//Particular prodcuts in the category :
+https://api.escuelajs.co/api/v1/categories/2/products  
+
+
+// Backend for users: 
+https://api.escuelajs.co/api/v1/users/
