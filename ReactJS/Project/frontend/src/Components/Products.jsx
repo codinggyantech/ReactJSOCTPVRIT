@@ -5,7 +5,7 @@ const Products = ({data}) => {
 console.log(data)
   return (
     <>
-    {data.map(elem=><ProductCard elem = {elem} />)}
+    {data.map(elem=><ProductCard key={elem.id} elem = {elem} />)}
     
     </>
   )

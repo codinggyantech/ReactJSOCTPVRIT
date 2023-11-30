@@ -10,21 +10,21 @@ import axios from 'axios';
 function App() {
   const [data,setData] = useState()
 
-  const apicall  =  async()=>{
-    let res = await axios.get('https://fakestoreapi.com/products')
-     setData(res.data)
-  }
-
-  useEffect(  ()=>{
-apicall()
+const apicall  =  async ()=>{
      
-   
+  let res = await axios.get('https://fakestoreapi.com/products')
+  setData(res.data)
+  
+}
+
+  useEffect(()=>{
 
 
+apicall()
 
-    //  return () => {
-    //   console.log('This will be logged on unmount');
-    // };
+     return () => {
+      console.log('This will be logged on unmount');
+    };
 
   },[])
 

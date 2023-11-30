@@ -10,21 +10,21 @@ const SingleProduct = () => {
      const [data,setData] = useState()
 
     const apicall = async()=>{
-        
         let res = await axios.get(`https://fakestoreapi.com/products/${productId}`)
         setData(res.data)
         console.log(res.data)
+       
      }
 
-     useEffect(  ()=>{
+     useEffect( ()=>{
    
-      apicall()
+        
+       apicall()
    
    
-   
-        // return () => {
-        //     console.log('This will be logged on unmount');
-        //   };
+        return () => {
+            console.log('This will be logged on unmount');
+          };
    
      },[])
 
@@ -40,7 +40,7 @@ const SingleProduct = () => {
             </div>
             <div className="col-6">
                 <h1>{data.title}</h1>
-                <h2>{data.price}</h2>
+                <h2>₹{data.price}</h2>
                 <h3>{data.category}</h3>
                 <p>{data.description}</p>
             </div>
